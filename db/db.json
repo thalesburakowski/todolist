@@ -1,0 +1,16 @@
+{
+  "todos": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Ir para o Coaching de JS",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "title": "Terminar esse To-do list",
+      "completed": false,
+      "id": 2
+    }
+  ]
+}
