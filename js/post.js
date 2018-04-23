@@ -1,11 +1,10 @@
 
 let adicionar = document.getElementById('add')
-var count = 0
 
 adicionar.addEventListener('click', () => {
-    event.preventDefault()
+    let table = document.getElementById('table')
+    
     let field = document.getElementById('campo').value
-    console.log(field);
     
     let data = {
         "userId": 1,
@@ -18,7 +17,7 @@ adicionar.addEventListener('click', () => {
         body: JSON.stringify(data),
         headers: new Headers({
             'Content-type':'application/json;charset=utf-8'
-        })
-    }).then(console.log(data))
+        }).then(table.innerHTML += `<td class="lembrete">${data.title}</td>`)
+    })
 
 })
